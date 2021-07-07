@@ -1,0 +1,29 @@
+<div class="container-fluid navs">
+  <div class="row navt">
+    <div class="col-4 text-center">
+      <span>
+        <a routerLink="">
+          <img class="pt-1 pb-1" src="../../../assets/logo1.jpg" alt="logo">
+        </a>
+      </span>
+    </div>
+    <div class="col-6 text-center canle">
+      <span>
+        <a routerLink="/" class="mr-3">TRANG CHỦ</a>
+        <a routerLink="thongtin" class="mr-3">THÔNG TIN</a>
+        <a routerLink="gioithieu" class="mr-3">GIỚI THIỆU</a>
+        <a routerLink="tintuc" class="mr-3">TIN TỨC</a>
+        <a routerLink="lienhe" class="mr-3">LIÊN HỆ</a>
+        <a routerLink="tacgia" class="mr-3">TÁC GIẢ</a>
+      </span>
+    </div>
+    <div class="col-2 text-right canle pr-5">
+      <span>
+        <a *ngIf="isAuthenticated" routerLinkActive="active-link" routerLink="/posts"><span>Posts</span></a>
+        <a *ngIf="!isAuthenticated" routerLinkActive="active-link" routerLink="/login"><span>Login</span></a>
+        <a *ngIf="isAuthenticated" (click)="logout()" routerLinkActive="active-link" routerLink="/login"><span>Logout</span></a>
+        <a *ngIf="!isAuthenticated" routerLinkActive="active-link" routerLink="/signup"><span>Signup</span></a>
+      </span>
+    </div>
+  </div>
+</div>

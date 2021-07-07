@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-4 mx-auto text-center mt-5">
+      <img src="../../../assets/logo1.jpg" alt="">
+    </div>
+  </div>
+  <div class="row mt-5 mb-5">
+    <div class="col-6  mx-auto">
+      <form [formGroup]="loginForm" (ngSubmit)="login()" novalidate>
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="Example: test@gmail.com" formControlName="email" />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Password</mat-label>
+          <input matInput type="password" placeholder="Example: T7q6s5rd5@dcg!#$aa" formControlName="password"/>
+        </mat-form-field>
+        <button color="basic" [disabled]="!loginForm.valid" mat-stroked-button type="submit">
+          <span>Log in</span>
+        </button>
+      </form>
+      <label ngif="ismess" style="color: red;">{{mess}}</label>
+    </div>
+  </div>
+</div>

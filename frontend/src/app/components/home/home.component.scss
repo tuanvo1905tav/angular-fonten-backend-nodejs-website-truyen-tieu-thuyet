@@ -1,0 +1,38 @@
+mat-card{
+  width: 210px ;
+  height: 300px ;
+  margin: 2em;
+  // display: flex;
+  // flex-wrap: wrap;
+}
+
+.yy{
+  width: 120px;
+  height: 30px; 
+  padding-bottom: 30px; 
+  margin:15px 0px 0px 25px;
+}
+.post-title{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 25px;
+  -webkit-line-clamp: 3;
+  height: 50px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.post-meta{
+  margin-top: 15px;
+}
+.post-body{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 25px;
+  -webkit-line-clamp: 3;
+  height: 75px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.tieude{
+  font-weight: 200;
+}

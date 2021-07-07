@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-2">
+      <img src="../../../assets/in-poster-quan-go-vap.jpg" alt="" width="300"><br>
+      <img src="../../../assets/poster2.jpg" alt="" width="300">
+    </div>
+    <div class="col-8 mt-5 mb-5">
+      <mat-card *ngFor="let get of posts$ | async">
+        <div class="title" id="1f">
+          {{ get.title }}
+        </div>
+        <div class="time">
+          Thời gian đăng truyện: {{ get.created }}
+        </div>
+        <div class="body">
+          {{ get.body }}
+        </div>
+        <div class="end">
+          <i>HẾT</i>
+        </div>
+      </mat-card>
+    </div>
+    <div class="col-2">
+      <img src="../../../assets/poster1.jpg" alt="" width="300"> <br>
+      <img src="../../../assets/poster3.png" alt="" width="300">
+    </div>
+  </div>
+</div>
